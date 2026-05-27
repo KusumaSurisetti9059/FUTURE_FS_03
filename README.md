@@ -19,7 +19,7 @@ Features
 - Detailed About Us Section
 - Contact Section with Location
 - Professional Layout
-
+- Mobile visibility
 
 
 Technologies Used
