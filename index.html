@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head > 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" ><title> Metal Shop</title></head>
+    <body>
+        <div class="nb">
+        <h1 style="margin:0">Sri Durga Karthikeya Metal Stores</h1>
+        <nav >
+            
+            <ul >
+                <li> <a href="#home" style="color:black"> Home</a></li>
+                <li><a href="#about" style="color:black">About Us</a></li>
+               <li> <a href="#products" style="color:black"> Products</a></li>
+                <li> <a href="#contact" style="color:black"> Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <section id="home" class="h" >
+            <img src="Shop.jpg"  >
+            <div class="text" >
+                <h2> Sri Durga Karthikeya Metal Stores</h2>
+                <p> Trusted store for quality steel, aluminium, copper products and kitchen essentials</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about_sec">
+
+                <h2>About Us</h2>
+                <p>Sri Durga karthikeya Metal Stores is one of the trusted and well-known stores providing quality steel, aluminium,copper and household products for daily needs.
+                    Our shop offers a wide variety of kitchen essentials , home appliances and durable metal products at affordable prices for every family.            </p>
+                <p>We specialize in products such as steel utensils, water bottles, lunch boxes, mixer grinders, gas stoves, copper items,aluminium cookware,kitchen accessories, and many other household essentials.
+                    We carefully select items that select products that combine quality,durability and modern deisgn to satisfy our customers. </p>
+            </div>
+        </section>
+        <section id="products"class="products">
+            <h2>Our Products</h2>
+           
+            <div class="products_sec" >
+                <div class="product_card">
+                    <img src="Pictures\Steel_bottle.jpg"/>
+                    <h3>Steel Water Bottle<br>190 rupees</h3>
+                    <p>Durable stainless steel bottles for daily use. </p>
+                </div>
+                <div class="product_card">
+                    <img src="Pictures\mixer.jpg"/>
+                    <h3>3-jar Mixer<br>3800 rupees</h3>
+                    <p>High Quality mixer grinder with modern features. </p>
+                </div>
+                <div class="product_card">
+                    <img src="Pictures\Carriage.png"/>
+                    <h3>Lunch Box Set<br>1000 rupees</h3>
+                    <p>Premium Steel lunch boxes for schools and offices </p>
+                </div>
+            </div>
+            <div id="more_products1"class="more_pro" >
+                <div class="product_card" >
+                    <img src="Pictures\Fan.jpg"/>
+                    <h3>Stand Fan<br>1800 rupees</h3>
+                    <p>High Speed Stand fan with Warranty</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\C_bottle.png"/>
+                    <h3>Copper Water bottle<br>900 rupees</h3>
+                    <p>Stylish and Healthy copper bottle.</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\Box.jpg"/>
+                    <h3>Steel Box<br>200 rupees</h3>
+                    <p>A simple box easy to carry.</p>
+                </div>   
+            </div>
+            <div id="more_products2"class="more_pro" >
+                <div class="product_card" >
+                    <img src="Pictures\Flask.jpg"/>
+                    <h3>Flask<br>650 rupees</h3>
+                    <p>Stainless Steel Vacuum Insulated Flask</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\Dishes (2).jpg"/>
+                    <h3>Cookware set <br>1100 rupees</h3>
+                    <p>Cookware set with copper bottom at affordable prices.</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\Stove.jpg"/>
+                    <h3>Gas Stove<br>4700 rupees</h3>
+                    <p>Three Burner high quality Gas Stove.</p>
+                </div>   
+            </div>
+            <div id="more_products3"class="more_pro" >
+                <div class="product_card" >
+                    <img src="Pictures\Hot_box.jpg"/>
+                    <h3>Stainless Steel Insulated Casserole Set<br>1300 rupees</h3>
+                    <p>Stainless steel, which is durable, rust-resistant, and easy to clean.</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\Tumbler.jpg"/>
+                    <h3>Tumbler <br>180 rupees</h3>
+                    <p>Steel tumbler for daily use.</p>
+                </div>
+                <div class="product_card" >
+                    <img src="Pictures\Kettle.jpg"/>
+                    <h3>Kettle<br>900 rupees</h3>
+                    <p>High-quality kettle for efficient boiling.</p>
+                </div>   
+            </div>
+            <div class="arrow">
+                <button onclick="showProducts()">&#8594;</button>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div>
+                <h2>Contact Us</h2>
+                <p><b>Address:</b>Kotagummam Center,Main Road,Pithapuram,Kakinada District,Andhra Pradesh,533450.</p>
+                <p><b>Phone:</b> +91 9642109005</p>
+                <p><b>Email:</b> sivakumarsurisetti9@gmail.com</p>
+            </div>
+        </section>
+        <script>
+            let count=0;
+        function showProducts(){
+           count++;
+           if(count==1){
+            document.getElementById("more_products1").style.display="grid";
+           }
+           else if(count==2){
+            document.getElementById("more_products2").style.display="grid";
+           }
+           else if(count==3){
+            document.getElementById("more_products3").style.display="grid";
+           }
+           else{
+            alert("We will add more items soon. Stay tuned!");
+           }
+        }
+        </script>
+    </body>
+</html>
